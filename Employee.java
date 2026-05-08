@@ -1,6 +1,6 @@
 public class Employee implements Cloneable
 {
-    public String first
+    public String first;
     public String second;
     public float pay;
     
@@ -8,14 +8,14 @@ public class Employee implements Cloneable
     {
         this.first = "";
         this.second = "";
-        this.pay = 0.0;
+        this.pay = (float) 0.0;
     }
     
     public Employee(String first, String second)
     {
         this.first = first;
         this.second = second;
-        this.pay = 0.0;
+        this.pay = (float) 0.0;
     }
     
     public Employee(String first, String second, float pay)
