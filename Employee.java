@@ -59,7 +59,7 @@ public class Employee implements Cloneable
     {
         String msg;
         msg = "Name: " + this.getFirstName() + " " + this.getLastName() + ".\n";
-        msg += "Pay: " + this.getPay() + ".\n";
+        msg += "Pay: $" + this.getPay() + ".\n";
         return msg;
     }
     
