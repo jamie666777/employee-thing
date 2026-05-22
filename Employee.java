@@ -47,7 +47,7 @@ public class Employee implements Cloneable
     
     public float getPay()
     {
-        return this.pay;
+        return (new NumberFormat()).format(this.pay);
     }
     
     public void setPay(float pay)
@@ -63,17 +63,9 @@ public class Employee implements Cloneable
         return msg;
     }
     
-    public Employee clone()
+    public Employee clone() throws CloneNotSupportedException
     {
-        Employee emp;
-        try
-        {
-            emp = (Employee) super.clone();
-        }
-        catch (CloneNotSupportedException e)
-        {
-            return null;
-        }
+        Employee emp = (Employee) super.clone();
         return emp;
     }
     
@@ -83,7 +75,7 @@ public class Employee implements Cloneable
         {
             return true;
         }
-        if ((this == null) | (obj == null))
+        if ((this == null) ^ (obj == null))
         {
             return false;
         }
