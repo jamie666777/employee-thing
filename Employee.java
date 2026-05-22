@@ -102,4 +102,9 @@ public class Employee implements Cloneable
             return false;
         }
     }
+
+    public void fire()
+    {
+        super.finalize();
+    }
 }
