@@ -1,4 +1,4 @@
-public class Employee implements Cloneable
+public class Employee implements Cloneable, Employable
 {
     public String first;
     public String second;
